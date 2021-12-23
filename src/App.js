@@ -4,6 +4,9 @@ import Header from './Components/Header';
 import HomePage from './Pages/HomePage';
 import Registration from './Pages/Registration/Index'
 import { Route, Routes } from 'react-router-dom';
+import Footer from './Components/Footer';
+import Login from './Pages/Login';
+
 
 function App() {
   return (
@@ -11,11 +14,12 @@ function App() {
       <Header />
       <div className='main'>
         <Routes>
-          <Route exact path="/" element={<HomePage />} />
-          <Route exact path="/Registration" element={<Registration/>} />
+          <Route path="/" element={<HomePage />} />
+          <Route path="/Registration" element={<Registration/>}/>
+          <Route path="/Login" element={<Login/>}/>
         </Routes>
       </div>
-
+      <Footer/>
     </div>
   );
 }
