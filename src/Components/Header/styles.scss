@@ -1,7 +1,7 @@
 .header{
     height: 70px;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
-    
+    box-shadow: 0 4x 12 0 rgba(0,0,0,.1);
+    margin-bottom: 5px;
 .wrap{
     max-width: 1500px;
     height: 100%;
@@ -19,6 +19,34 @@
         
         
     }
-   
-}
+   }
+
+   .callToAction{
+       position: absolute;
+       right: 140px;
+       top:5%;
+       -webkit-transform: translateY(-50%);
+       -moz-transform:translateY(-50%);
+       transform: translateY(-50%);
+       
+    ul, li {
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        list-style: none;
+        display: inline;
+        margin-right: 10px;
+
+        &:last-child{margin-right: 0;}
+    }
+    a {
+        font-size: 18px;
+        line-height: 1;
+        color: black;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+   }
 }
