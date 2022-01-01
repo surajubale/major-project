@@ -53,10 +53,8 @@ class App extends Component {
         <Header currentUser={currentUser} />
         <div className='main'>
           <Routes>
-            
-
             <Route path="/" element={<HomePage />} />
-            <Route path="/Registration" element={<Registration />} />
+
 
             {currentUser && (
               < Route path ="*" element={<Navigate to="/"  />}/>
@@ -65,7 +63,7 @@ class App extends Component {
             {!currentUser && (
               <Route path="/Login" element={<Login />} /> 
             )}
-
+            <Route path="/Registration" element={<Registration />} />
           </Routes>
         </div>
         <Footer />
